@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Internova — Digital Internship Ecosystem
 
-## Getting Started
+> **Building Smarter Internship Ecosystems — Innovate • Validate • Elevate**  
+> Developed for **GHR Intern-Track Hackathon 2026** (GHRCEM, Jalgaon)
 
-First, run the development server:
+---
+
+## 🌟 Overview
+
+**Internova** is an enterprise-grade, AI-powered digital platform that revolutionizes the entire internship lifecycle — from discovery to pre-placement offer (PPO) conversion and startup incubation.
+
+It connects **Students**, **Faculty Mentors**, **Industry Partners**, and **TPO Admins** on a unified digital platform featuring:
+- 🤖 **AI Smart Matcher & Skill Gap Analyzer** (Google Gemini API integration)
+- 🔗 **Blockchain-Verified Credentials** (SHA-256 cryptographic hashes & public QR verify)
+- 📍 **GPS Geofence & QR Attendance Verification**
+- 🏆 **InternScore™** (Proprietary 0-100 composite performance index)
+- 🚀 **Startup Launchpad** (Translating internship projects into viable ventures - Objective 4)
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework:** Next.js 14+ (App Router)
+- **Styling:** Custom Glassmorphic CSS Design System (`globals.css`)
+- **State & Auth:** React Context + Local Storage Persistence (`AuthContext.js`)
+- **Data & Charts:** Chart.js, React-Chartjs-2
+- **Deployment:** Vercel Ready (Zero-cost setup)
+
+---
+
+## 🚀 Quick Start Guide
+
+### 1. Installation
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/internova.git
+
+# Navigate to directory
+cd internova
+
+# Install dependencies
+npm install
+```
+
+### 2. Running Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔑 Quick Demo Login Credentials
 
-## Learn More
+Try the pre-configured accounts on the login screen ([http://localhost:3000/login](http://localhost:3000/login)):
 
-To learn more about Next.js, take a look at the following resources:
+| Role | Email | Password |
+|---|---|---|
+| 👨‍🎓 **Student** | `student@internova.in` | `demo123` |
+| 👨‍🏫 **Faculty** | `faculty@internova.in` | `demo123` |
+| 🏢 **Industry** | `industry@internova.in` | `demo123` |
+| 🔑 **Admin / TPO** | `admin@internova.in` | `demo123` |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 Project Structure
 
-## Deploy on Vercel
+```
+internova/
+├── src/
+│   ├── app/
+│   │   ├── page.js                    # Animated Landing Page
+│   │   ├── login/page.js              # Auth Login with Demo Buttons
+│   │   ├── register/page.js           # 4-Step Onboarding Wizard
+│   │   ├── verify/[hash]/page.js      # Public Blockchain Verification Link
+│   │   ├── dashboard/
+│   │   │   ├── layout.js              # Universal Shell (Sidebar + Topbar)
+│   │   │   ├── student/               # Student Features (Discover, Skills, Passport, Launchpad...)
+│   │   │   ├── faculty/               # Faculty Mentorship & Rubric Evaluations
+│   │   │   ├── industry/              # Industry Applicants & PPO Manager
+│   │   │   └── admin/                 # TPO Command Center & Audit Logs
+│   ├── data/
+│   │   └── demoData.js                # Relational demo dataset (GHRCEM context)
+│   └── lib/
+│       └── auth/
+│           └── AuthContext.js          # Auth Provider & LocalStorage State
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Deploy to Vercel (1-Click)
+
+1. Push this code to a GitHub repository.
+2. Go to [Vercel](https://vercel.com) and import the repository.
+3. Select Next.js template and click **Deploy**.
+4. Your platform will be live at `https://internova.vercel.app` in under 60 seconds!
+
+---
+
+## 📜 License
+
+Created with 💜 by Team Internova for GHR Intern-Track Hackathon 2026. All rights reserved.
